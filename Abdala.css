@@ -261,6 +261,45 @@ footer {
     display: block;
 }
 
+
+/* Botón Flotante de WhatsApp */
+.btn-whatsapp {
+    position: fixed;
+    bottom: 25px;
+    left: 25px; /* Ubicación abajo a la izquierda */
+    width: 60px;
+    height: 60px;
+    background-color: #25d366; /* Color verde oficial de WhatsApp */
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000; /* Asegura que quede siempre por encima de otros elementos */
+    text-decoration: none;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto Hover */
+.btn-whatsapp:hover {
+    background-color: #20ba5a;
+    transform: scale(1.1);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.4);
+}
+
+/* Adaptación para pantallas pequeñas */
+@media (max-width: 768px) {
+    .btn-whatsapp {
+        width: 50px;
+        height: 50px;
+        font-size: 26px;
+        bottom: 15px;
+        left: 15px;
+    }
+}
+
 /* Adaptación Mobile */
 @media (max-width: 768px) {
     .footer-container {
