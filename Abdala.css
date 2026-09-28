@@ -1,0 +1,291 @@
+:root{
+    --color-primario: #74B0DE;
+    --color-secundario: ;
+    --fondos: #f4f4f6;
+}
+
+/* Reset básico de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--fondos);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Header y Logo */
+
+/* Ajuste de contenedor del Header */
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1px 0 2px 0;
+    background: linear-gradient(135deg, #74B0DE , #1e3a8a);
+}
+
+/* Contenedor del Logo */
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Imagen del Logo */
+.logo img {
+    max-width: 220px; /* Ajusta el ancho máximo según el tamaño deseado de tu logo */
+    height: auto;     /* Mantiene la proporción original de la imagen */
+    display: block;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+/* Efecto opcional al pasar el mouse por el logo */
+.logo img:hover {
+    transform: scale(1.03);
+}
+
+
+/* Contenedor Principal (Main) */
+main {
+    width: 100%;
+    max-width: 1200px;
+    margin: 5%;
+    padding: 5%;
+}
+
+.cards-container {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Tarjetas Individuales */
+.card {
+    flex: 1;
+    min-width: 320px;
+    max-width: 560px;
+    height: 380px;
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+.card a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    position: relative;
+}
+
+/* Imagen de fondo */
+.card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Capa de sombra/degradado sobre la imagen */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.65) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+/* Texto superpuesto */
+.card-title {
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+    margin-bottom: 10px;
+}
+
+.card-subtitle {
+    color: #e2e8f0;
+    font-size: 15px;
+    max-width: 80%;
+    margin-bottom: 20px;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.card-amount {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* Botón estilo píldora */
+.btn-action {
+    background: linear-gradient(135deg, #74B0DE , #1e3a8a);
+    color: #ffffff;
+    padding: 12px 28px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 2px solid black; /* Borde dorado como en la imagen */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s ease;
+}
+
+.card:hover .btn-action {
+    background: linear-gradient(135deg, #2563eb, #1e3a8a);
+}
+
+
+footer {
+   background: linear-gradient(135deg, #74B0DE , #1e3a8a);
+    color:  white;
+    width: 100%;
+    padding: 40px 20px;
+    margin-top: auto;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 250px;
+}
+
+/* Redes Sociales */
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    color: var(--color-texto-footer);
+    font-size: 18px;
+    text-decoration: none;
+    transition: opacity 0.2s;
+}
+
+.social-icons a:hover {
+    opacity: 0.8;
+}
+
+/* Información de Contacto */
+.contact-info {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info li {
+    font-size: 14px;
+    margin-bottom: 12px;
+    line-height: 1.4;
+}
+
+/* Enlaces del Footer */
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 12px;
+}
+
+.footer-links a {
+    color: var(--color-texto-footer);
+    text-decoration: none;
+    font-size: 15px;
+    transition: opacity 0.2s;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* Columna del Mapa */
+.map-col h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.map-container {
+    width: 100%;
+    max-width: 320px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.map-container iframe {
+    display: block;
+}
+
+/* Adaptación Mobile */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .map-container {
+        max-width: 100%;
+    }
+}
+
+/* Adaptabilidad a pantallas pequeñas */
+@media (max-width: 768px) {
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .card {
+        width: 100%;
+        height: 320px;
+    }
+
+    .card-title {
+        font-size: 26px;
+    }
+}
