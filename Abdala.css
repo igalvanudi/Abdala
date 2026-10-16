@@ -41,16 +41,21 @@ header {
     align-items: center;
 }
 
-/* Imagen del Logo */
+.logo-sin-fondo {
+    max-width: 120px;
+    height: auto;
+    display: block;
+    /* Elimina visualmente el fondo blanco mezclándolo con el fondo contenedor */
+}
+
 .logo img {
-    max-width: 220px; /* Ajusta el ancho máximo según el tamaño deseado de tu logo */
+    max-width: 120px; /* Ajusta el ancho máximo según el tamaño deseado de tu logo */
     height: auto;     /* Mantiene la proporción original de la imagen */
     display: block;
     object-fit: contain;
     transition: transform 0.3s ease;
 }
 
-/* Efecto opcional al pasar el mouse por el logo */
 .logo img:hover {
     transform: scale(1.03);
 }
@@ -60,8 +65,30 @@ header {
 main {
     width: 100%;
     max-width: 1200px;
-    margin: 5%;
     padding: 5%;
+}
+
+.selection-header {
+    text-align: center;
+    margin-bottom: 35px;
+    padding: 0 15px;
+}
+
+.main-title {
+    color: var(--color-azul-oscuro, #1a365d); /* Usa la variable de azul o el valor por defecto */
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    letter-spacing: -0.5px;
+}
+
+.main-subtitle {
+    color: #555555;
+    font-size: 18px;
+    font-weight: 400;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.4;
 }
 
 .cards-container {
@@ -178,17 +205,15 @@ footer {
 
 .footer-container {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 10% auto;
     display: flex;
     justify-content: space-between;
     gap: 30px;
     flex-wrap: wrap;
-}
-
-.footer-col {
     flex: 1;
     min-width: 250px;
 }
+
 
 /* Redes Sociales */
 .social-icons {
@@ -289,6 +314,20 @@ footer {
     box-shadow: 0 6px 14px rgba(0, 0, 0, 0.4);
 }
 
+@media (max-width: 768px) {
+    .selection-header {
+        margin-bottom: 25px;
+    }
+
+    .main-title {
+        font-size: 24px;
+    }
+
+    .main-subtitle {
+        font-size: 15px;
+    }
+}
+
 /* Adaptación para pantallas pequeñas */
 @media (max-width: 768px) {
     .btn-whatsapp {
@@ -299,8 +338,6 @@ footer {
         left: 15px;
     }
 }
-
-
 
 /* Adaptación Mobile */
 @media (max-width: 768px) {
