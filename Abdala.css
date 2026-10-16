@@ -45,7 +45,7 @@ header {
     max-width: 120px;
     height: auto;
     display: block;
-    /* Elimina visualmente el fondo blanco mezclándolo con el fondo contenedor */
+    /* Elimina visualmente el fondo blanco mezclándolo con el fondo contenedor */ 
 }
 
 .logo img {
