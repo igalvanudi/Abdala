@@ -41,32 +41,16 @@ header {
     align-items: center;
 }
 
-<<<<<<< HEAD
 /* Imagen del Logo */
 .logo img {
     max-width: 220px; /* Ajusta el ancho máximo según el tamaño deseado de tu logo */
-=======
-.logo-sin-fondo {
-    max-width: 120px;
-    height: auto;
-    display: block;
-    /* Elimina visualmente el fondo blanco mezclándolo con el fondo contenedor */
-    mix-blend-mode: multiply; 
-}
-
-.logo img {
-    max-width: 120px; /* Ajusta el ancho máximo según el tamaño deseado de tu logo */
->>>>>>> 8997d38 (Visual arreglado)
     height: auto;     /* Mantiene la proporción original de la imagen */
     display: block;
     object-fit: contain;
     transition: transform 0.3s ease;
 }
 
-<<<<<<< HEAD
 /* Efecto opcional al pasar el mouse por el logo */
-=======
->>>>>>> 8997d38 (Visual arreglado)
 .logo img:hover {
     transform: scale(1.03);
 }
@@ -76,39 +60,10 @@ header {
 main {
     width: 100%;
     max-width: 1200px;
-<<<<<<< HEAD
     margin: 5%;
     padding: 5%;
 }
 
-=======
-    padding: 5%;
-}
-
-.selection-header {
-    text-align: center;
-    margin-bottom: 35px;
-    padding: 0 15px;
-}
-
-.main-title {
-    color: var(--color-azul-oscuro, #1a365d); /* Usa la variable de azul o el valor por defecto */
-    font-size: 32px;
-    font-weight: 700;
-    margin-bottom: 10px;
-    letter-spacing: -0.5px;
-}
-
-.main-subtitle {
-    color: #555555;
-    font-size: 18px;
-    font-weight: 400;
-    max-width: 600px;
-    margin: 0 auto;
-    line-height: 1.4;
-}
-
->>>>>>> 8997d38 (Visual arreglado)
 .cards-container {
     display: flex;
     gap: 25px;
@@ -223,29 +178,18 @@ footer {
 
 .footer-container {
     max-width: 1200px;
-<<<<<<< HEAD
     margin: 0 auto;
-=======
-    margin: 0 10% auto;
->>>>>>> 8997d38 (Visual arreglado)
     display: flex;
     justify-content: space-between;
     gap: 30px;
     flex-wrap: wrap;
-<<<<<<< HEAD
 }
 
 .footer-col {
-=======
->>>>>>> 8997d38 (Visual arreglado)
     flex: 1;
     min-width: 250px;
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 8997d38 (Visual arreglado)
 /* Redes Sociales */
 .social-icons {
     display: flex;
@@ -345,23 +289,6 @@ footer {
     box-shadow: 0 6px 14px rgba(0, 0, 0, 0.4);
 }
 
-<<<<<<< HEAD
-=======
-@media (max-width: 768px) {
-    .selection-header {
-        margin-bottom: 25px;
-    }
-
-    .main-title {
-        font-size: 24px;
-    }
-
-    .main-subtitle {
-        font-size: 15px;
-    }
-}
-
->>>>>>> 8997d38 (Visual arreglado)
 /* Adaptación para pantallas pequeñas */
 @media (max-width: 768px) {
     .btn-whatsapp {
@@ -373,11 +300,8 @@ footer {
     }
 }
 
-<<<<<<< HEAD
 
 
-=======
->>>>>>> 8997d38 (Visual arreglado)
 /* Adaptación Mobile */
 @media (max-width: 768px) {
     .footer-container {
@@ -405,8 +329,4 @@ footer {
     .card-title {
         font-size: 26px;
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 8997d38 (Visual arreglado)
