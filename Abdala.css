@@ -91,6 +91,15 @@ main {
     line-height: 1.4;
 }
 
+.main-subtitle2 {
+    color: #555555;
+    font-size: 16px;
+    font-weight: 400;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.4;
+}
+
 .cards-container {
     display: flex;
     gap: 25px;
@@ -160,6 +169,14 @@ main {
 }
 
 .card-subtitle {
+    color: #e2e8f0;
+    font-size: 15px;
+    max-width: 80%;
+    margin-bottom: 20px;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.card-subtitle2 {
     color: #e2e8f0;
     font-size: 15px;
     max-width: 80%;
